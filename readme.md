@@ -7,11 +7,11 @@
 ## Contents
 
 - [Foundations](#foundations)
-- [Infrastructure & Cloud](#infrastructure--cloud)
-- [Visuals & Media](#visuals--media)
-- [Data & Analytics](#data--analytics)
-- [Business & Productivity](#business--productivity)
-- [Patterns & Methodologies](#patterns--methodologies)
+- [Infrastructure &amp; Cloud](#infrastructure--cloud)
+- [Visuals &amp; Media](#visuals--media)
+- [Data &amp; Analytics](#data--analytics)
+- [Business &amp; Productivity](#business--productivity)
+- [Patterns &amp; Methodologies](#patterns--methodologies)
 - [Resources](#resources)
 - [Related Awesome Lists](#related-awesome-lists)
 
@@ -72,6 +72,7 @@
 - [Diagrams](https://diagrams.mingrammer.com/) - Draw cloud system architecture in Python code.
 - [Markmap](https://markmap.js.org/) - Visualize Markdown documents as interactive mindmaps.
 - [Structurizr](https://structurizr.com/) - Architecture diagrams as code using the C4 model.
+- [Infographic](https://infographic.antv.vision/) - Declarative infographic rendering.
 
 ### Presentations as Code
 
@@ -126,6 +127,20 @@
 - [Soda](https://www.soda.io/) - Data quality testing using YAML configuration.
 - [dbt tests](https://docs.getdbt.com/docs/build/tests) - Built-in testing framework for dbt models.
 
+### Visualization Libraries
+
+*Programmatic charting and plotting tools for data analysis.*
+
+- [Matplotlib](https://matplotlib.org/) - Comprehensive 2D plotting library for Python.
+- [Seaborn](https://seaborn.pydata.org/) - High-level statistical data visualization built on Matplotlib.
+- [Altair](https://altair-viz.github.io/) - Declarative statistical visualization library for Python built on Vega-Lite.
+- [Plotly](https://plotly.com/) - Interactive plotting library for Python, R, and JavaScript.
+- [Bokeh](https://bokeh.org/) - Interactive visualization library for modern web browsers.
+- [ggplot (plotnine)](https://plotnine.readthedocs.io/) - Grammar of graphics for Python inspired by R's ggplot2.
+- [Vega/Vega-Lite](https://vega.github.io/vega-lite/) - Declarative language for creating, saving, and sharing interactive visualization designs.
+- [D3.js](https://d3js.org/) - JavaScript library for manipulating documents based on data.
+- [Chart.js](https://www.chartjs.org/) - Simple yet flexible JavaScript charting for designers & developers.
+- [Holoviews](https://holoviews.org/) - Declarative data analysis and visualization library for Python.
 ## Business & Productivity
 
 ### Resume as Code
@@ -170,7 +185,7 @@
 *Essential reading for the Everything as Code practitioner.*
 
 - [Infrastructure as Code](https://www.oreilly.com/library/view/infrastructure-as-code/9781098114664/) - Comprehensive guide to managing cloud infrastructure with automation by Kief Morris.
-- [Terraform: Up & Running](https://www.terraformupandrunning.com/) - Practical guide to writing, planning, and creating IaC with Terraform by Yevgeniy Brikman.
+- [Terraform: Up &amp; Running](https://www.terraformupandrunning.com/) - Practical guide to writing, planning, and creating IaC with Terraform by Yevgeniy Brikman.
 
 ### Articles
 
