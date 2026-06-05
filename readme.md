@@ -177,6 +177,7 @@
 - [Literate Programming](https://en.wikipedia.org/wiki/Literate_programming) - Writing code as a narrative for humans.
 - [API Design First](https://swagger.io/resources/articles/adopting-an-api-first-approach/) - Define APIs before implementing them.
 - [Schema First](https://graphql.org/learn/schema/) - Define data schemas before writing application code.
+- [Ivy Tendril](https://github.com/Ivy-Interactive/Ivy-Tendril) - AI coding orchestration as code. Plans, verification gates, and agent memory defined in YAML and versionable in Git.
 
 ## Resources
 
