@@ -8,15 +8,48 @@
 
 - [Foundations](#foundations)
 - [Infrastructure &amp; Cloud](#infrastructure--cloud)
+  - [Infrastructure as Code](#infrastructure-as-code)
+  - [Configuration as Code](#configuration-as-code)
+  - [Policy as Code](#policy-as-code)
   - [APIs as Code](#apis-as-code)
+  - [GitOps](#gitops)
+  - [Development Environments as Code](#development-environments-as-code)
+  - [Monitoring as Code](#monitoring-as-code)
+  - [Pipelines as Code](#pipelines-as-code)
 - [Visuals &amp; Media](#visuals--media)
+  - [Diagrams as Code](#diagrams-as-code)
+  - [Presentations as Code](#presentations-as-code)
+  - [Documents as Code](#documents-as-code)
   - [Documentation as Code](#documentation-as-code)
+  - [Video as Code](#video-as-code)
+  - [CAD as Code](#cad-as-code)
 - [Data &amp; Analytics](#data--analytics)
+  - [Data Transformation as Code](#data-transformation-as-code)
+  - [BI as Code](#bi-as-code)
+  - [Data Quality as Code](#data-quality-as-code)
+  - [Visualization Libraries](#visualization-libraries)
+  - [Database as Code](#database-as-code)
+  - [Dashboards as Code](#dashboards-as-code)
+  - [Workflows as Code](#workflows-as-code)
+  - [AI Evaluations as Code](#ai-evaluations-as-code)
 - [Business &amp; Productivity](#business--productivity)
+  - [Resume as Code](#resume-as-code)
+  - [Finance as Code](#finance-as-code)
+  - [Notes as Code](#notes-as-code)
   - [Email as Code](#email-as-code)
+  - [Forms as Code](#forms-as-code)
 - [Patterns &amp; Methodologies](#patterns--methodologies)
 - [Resources](#resources)
+  - [Books](#books)
+  - [Articles](#articles)
+  - [Talks](#talks)
 - [Related Awesome Lists](#related-awesome-lists)
+  - [Infrastructure &amp; Cloud](#infrastructure--cloud)
+  - [Diagrams &amp; Documentation](#diagrams--documentation)
+  - [Data](#data)
+  - [Security &amp; Policy](#security--policy)
+  - [Productivity](#productivity)
+- [Contributing](#contributing)
 
 ## Foundations
 
@@ -39,7 +72,9 @@
 
 - [CDK](https://aws.amazon.com/cdk/) - Define AWS cloud infrastructure using familiar programming languages.
 - [CDKTF](https://developer.hashicorp.com/terraform/cdktf) - Use familiar programming languages to define Terraform infrastructure.
+- [Crossplane](https://www.crossplane.io/) - Build cloud infrastructure and platform APIs with declarative Kubernetes resources.
 - [OpenTofu](https://opentofu.org/) - Open source fork of Terraform.
+- [Packer](https://www.packer.io/) - Build machine images for multiple platforms from HCL templates.
 - [Pulumi](https://www.pulumi.com/) - Infrastructure as Code using familiar programming languages.
 - [Terraform](https://www.terraform.io/) - Infrastructure as Code tool for building, changing, and versioning infrastructure.
 
@@ -48,8 +83,11 @@
 *Manage system and application configuration through version-controlled files.*
 
 - [Ansible](https://www.ansible.com/) - Agentless automation and configuration management in YAML.
+- [cloud-init](https://cloud-init.io/) - Initialize cloud instances with declarative configuration.
+- [Docker Compose](https://docs.docker.com/compose/) - Define multi-container applications, networks, and volumes in YAML.
 - [Helm](https://helm.sh/) - The package manager for Kubernetes with templated YAML.
 - [Kustomize](https://kustomize.io/) - Kubernetes native configuration management without templates.
+- [Nix / NixOS](https://nixos.org/) - Define reproducible packages, development environments, and operating systems declaratively.
 
 ### Policy as Code
 
@@ -58,6 +96,7 @@
 - [Checkov](https://www.checkov.io/) - Static analysis tool for infrastructure as code security.
 - [Conftest](https://www.conftest.dev/) - Write tests against structured configuration data.
 - [Falco](https://falco.org/) - Cloud native runtime security using declarative rules.
+- [Kyverno](https://kyverno.io/) - Define Kubernetes validation, mutation, and resource generation policies in YAML.
 - [Open Policy Agent](https://www.openpolicyagent.org/) - Policy-based control for cloud native environments.
 - [Sentinel](https://www.hashicorp.com/sentinel) - Policy as code framework by HashiCorp.
 - [Trivy](https://trivy.dev/) - Comprehensive security scanner for containers and IaC.
@@ -67,6 +106,34 @@
 *Generate API implementations, clients, and documentation from version-controlled specifications.*
 
 - [OpenAPI Generator](https://github.com/OpenAPITools/openapi-generator) - Generate API clients, server stubs, and documentation from OpenAPI specifications.
+- [Smithy](https://smithy.io/) - Define language-independent service models and API contracts.
+- [TypeSpec](https://typespec.io/) - Describe API contracts with a modeling language and generate OpenAPI specifications.
+
+### GitOps
+
+*Continuously reconcile deployed applications with desired state stored in Git.*
+
+- [Argo CD](https://argo-cd.readthedocs.io/) - Synchronize Kubernetes applications with declarative configuration stored in Git.
+- [Flux](https://fluxcd.io/) - Reconcile Kubernetes deployments with version-controlled manifests and Helm releases.
+
+### Development Environments as Code
+
+*Define reproducible development tools, services, and container environments.*
+
+- [Dev Container Specification](https://containers.dev/) - Describe container-based development environments with devcontainer.json.
+- [devenv](https://devenv.sh/) - Define reproducible development environments, services, and tasks with Nix.
+
+### Monitoring as Code
+
+*Version monitoring configuration and alerting rules alongside application code.*
+
+- [Prometheus](https://prometheus.io/) - Define alerting and recording rules with YAML configuration and PromQL expressions.
+
+### Pipelines as Code
+
+*Define reusable continuous integration and delivery pipelines declaratively.*
+
+- [Tekton](https://tekton.dev/) - Define CI/CD tasks and pipelines with declarative Kubernetes resources.
 
 ## Visuals & Media
 
@@ -77,6 +144,7 @@
 - [Beautiful Mermaid](https://github.com/lukilabs/beautiful-mermaid) - Render Mermaid definitions as SVG diagrams or ASCII art.
 - [D2](https://d2lang.com/) - A modern declarative language that turns text into professional diagrams.
 - [Diagrams](https://diagrams.mingrammer.com/) - Draw cloud system architecture in Python code.
+- [Ditaa](https://ditaa.sourceforge.net/) - Render diagrams from ASCII art descriptions.
 - [Graphviz](https://graphviz.org/) - Open source graph visualization software using DOT language.
 - [Infographic](https://infographic.antv.vision/) - Declarative infographic rendering.
 - [LikeC4](https://github.com/likec4/likec4) - Describe software architecture with a modeling language and generate diagrams from the model.
@@ -84,6 +152,7 @@
 - [Mermaid](https://mermaid.js.org/) - JavaScript-based diagramming tool that renders Markdown-inspired text.
 - [PlantUML](https://plantuml.com/) - Create UML diagrams from plain text descriptions.
 - [Structurizr](https://structurizr.com/) - Architecture diagrams as code using the C4 model.
+- [WaveDrom](https://wavedrom.com/) - Render digital timing diagrams from JSON-based textual descriptions.
 
 ### Presentations as Code
 
@@ -103,6 +172,7 @@
 - [LaTeX](https://www.latex-project.org/) - Document preparation system for high-quality typesetting.
 - [Pandoc](https://pandoc.org/) - Universal document converter between markup formats.
 - [Quarkdown](https://github.com/iamgio/quarkdown) - Create books, documents, and presentations with an extended Markdown typesetting language.
+- [Quarto](https://quarto.org/) - Publish reproducible reports, books, presentations, and websites combining text and executable code.
 - [Typst](https://typst.app/) - Modern markup-based typesetting system for documents.
 
 ### Documentation as Code
@@ -110,7 +180,10 @@
 *Build documentation sites from version-controlled Markdown and configuration files.*
 
 - [docmd](https://github.com/docmd-io/docmd) - Compile Markdown documentation into static sites and machine-readable knowledge formats.
+- [Docusaurus](https://docusaurus.io/) - Build documentation websites from Markdown, MDX, and version-controlled configuration.
 - [Material for MkDocs](https://github.com/squidfunk/mkdocs-material) - Build searchable documentation sites from Markdown and YAML configuration.
+- [Sphinx](https://www.sphinx-doc.org/) - Generate technical documentation from reStructuredText and extensible text sources.
+- [VitePress](https://vitepress.dev/) - Build documentation websites from Markdown with Vue components.
 
 ### Video as Code
 
@@ -121,6 +194,13 @@
 - [Remotion](https://www.remotion.dev/) - Create real videos programmatically using React.
 - [Satori](https://github.com/vercel/satori) - Convert HTML and CSS into SVG images.
 - [Simple FFmpegJS](https://github.com/Fats403/simple-ffmpegjs) - Compose videos with declarative timelines of clips, audio, and transitions using FFmpeg in Node.js.
+
+### CAD as Code
+
+*Create parametric 3D models from version-controlled text definitions.*
+
+- [CadQuery](https://cadquery.readthedocs.io/) - Create parametric CAD models with Python.
+- [OpenSCAD](https://openscad.org/) - Create solid 3D models with a textual constructive geometry language.
 
 ## Data & Analytics
 
@@ -162,6 +242,32 @@
 - [Plotly](https://plotly.com/) - Interactive plotting library for Python, R, and JavaScript.
 - [Seaborn](https://seaborn.pydata.org/) - High-level statistical data visualization built on Matplotlib.
 - [Vega/Vega-Lite](https://vega.github.io/vega-lite/) - Declarative language for creating, saving, and sharing interactive visualization designs.
+
+### Database as Code
+
+*Describe database structures and relationships with version-controlled schemas.*
+
+- [DBML](https://dbml.dbdiagram.io/) - Define database tables and relationships with a declarative modeling language.
+
+### Dashboards as Code
+
+*Generate dashboards from reusable, version-controlled definitions.*
+
+- [Grafonnet](https://grafana.github.io/grafonnet/) - Generate Grafana dashboards with reusable Jsonnet definitions.
+
+### Workflows as Code
+
+*Define task dependencies, triggers, and orchestration in version-controlled files.*
+
+- [Argo Workflows](https://argoproj.github.io/workflows/) - Define container workflows as steps and dependency graphs in YAML.
+- [Kestra](https://kestra.io/) - Declare orchestration workflows, tasks, dependencies, and triggers in YAML.
+
+### AI Evaluations as Code
+
+*Version evaluation cases, model providers, and assertions for AI systems.*
+
+- [Promptfoo](https://www.promptfoo.dev/) - Define and run AI evaluations with version-controlled test cases and assertions.
+
 ## Business & Productivity
 
 ### Resume as Code
@@ -193,6 +299,14 @@
 *Create email content from version-controlled text sources.*
 
 - [emailmd](https://github.com/anypost/emailmd) - Convert Markdown into responsive HTML emails.
+- [MJML](https://mjml.io/) - Create responsive email templates with a dedicated markup language.
+- [React Email](https://react.email/) - Build version-controlled email templates with React components.
+
+### Forms as Code
+
+*Generate user interfaces from declarative schemas.*
+
+- [JSON Forms](https://jsonforms.io/) - Generate forms from JSON Schema and declarative UI schemas.
 
 ## Patterns & Methodologies
 
