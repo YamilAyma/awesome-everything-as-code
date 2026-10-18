@@ -16,6 +16,8 @@
   - [Development Environments as Code](#development-environments-as-code)
   - [Monitoring as Code](#monitoring-as-code)
   - [Pipelines as Code](#pipelines-as-code)
+  - [Backend as Code](#backend-as-code)
+  - [Build as Code](#build-as-code)
 - [Visuals &amp; Media](#visuals--media)
   - [Diagrams as Code](#diagrams-as-code)
   - [Presentations as Code](#presentations-as-code)
@@ -44,7 +46,7 @@
   - [Articles](#articles)
   - [Talks](#talks)
 - [Related Awesome Lists](#related-awesome-lists)
-  - [Infrastructure &amp; Cloud](#infrastructure--cloud)
+  - [Infrastructure &amp; Cloud](#infrastructure--cloud-1)
   - [Diagrams &amp; Documentation](#diagrams--documentation)
   - [Data](#data)
   - [Security &amp; Policy](#security--policy)
@@ -60,7 +62,9 @@
 - [JSON](https://www.json.org/) - Lightweight data-interchange format.
 - [Jsonnet](https://jsonnet.org/) - Data templating language for generating JSON/YAML.
 - [Markdown](https://daringfireball.net/projects/markdown/) - The ubiquitous markup language for documentation.
+- [Nickel](https://github.com/nickel-lang/nickel) - Compose, validate, and generate static configuration with a dedicated configuration language.
 - [OpenAPI](https://www.openapis.org/) - Standard for defining RESTful APIs in YAML/JSON.
+- [Pkl](https://github.com/apple/pkl) - Define typed configuration with validation and tooling for generating configuration files.
 - [TOML](https://toml.io/) - Tom's Obvious Minimal Language for configuration files.
 - [YAML](https://yaml.org/) - Human-friendly data serialization standard.
 
@@ -70,13 +74,16 @@
 
 *Define and provision infrastructure using declarative configuration files.*
 
+- [Alchemy](https://github.com/alchemy-run/alchemy) - Define cloud resources alongside application code in TypeScript (currently in beta).
 - [CDK](https://aws.amazon.com/cdk/) - Define AWS cloud infrastructure using familiar programming languages.
 - [CDKTF](https://developer.hashicorp.com/terraform/cdktf) - Use familiar programming languages to define Terraform infrastructure.
 - [Crossplane](https://www.crossplane.io/) - Build cloud infrastructure and platform APIs with declarative Kubernetes resources.
 - [OpenTofu](https://opentofu.org/) - Open source fork of Terraform.
 - [Packer](https://www.packer.io/) - Build machine images for multiple platforms from HCL templates.
 - [Pulumi](https://www.pulumi.com/) - Infrastructure as Code using familiar programming languages.
+- [SST](https://github.com/anomalyco/sst) - Define and deploy full-stack applications and cloud infrastructure with TypeScript.
 - [Terraform](https://www.terraform.io/) - Infrastructure as Code tool for building, changing, and versioning infrastructure.
+- [Terramate](https://github.com/terramate-io/terramate) - Orchestrate infrastructure stacks and generate configuration to reduce duplication across environments.
 
 ### Configuration as Code
 
@@ -88,6 +95,8 @@
 - [Helm](https://helm.sh/) - The package manager for Kubernetes with templated YAML.
 - [Kustomize](https://kustomize.io/) - Kubernetes native configuration management without templates.
 - [Nix / NixOS](https://nixos.org/) - Define reproducible packages, development environments, and operating systems declaratively.
+- [Pulumi ESC](https://github.com/pulumi/esc) - Compose environment configuration and secret references with declarative definitions.
+- [Timoni](https://github.com/stefanprodan/timoni) - Define Kubernetes applications with CUE and distribute reusable modules as OCI artifacts.
 
 ### Policy as Code
 
@@ -121,7 +130,10 @@
 *Define reproducible development tools, services, and container environments.*
 
 - [Dev Container Specification](https://containers.dev/) - Describe container-based development environments with devcontainer.json.
+- [Devbox](https://github.com/jetify-com/devbox) - Declare development tools and packages in devbox.json for isolated Nix-based environments.
 - [devenv](https://devenv.sh/) - Define reproducible development environments, services, and tasks with Nix.
+- [mise](https://github.com/jdx/mise) - Define tool versions, environment variables, and tasks in mise.toml.
+- [Pixi](https://github.com/prefix-dev/pixi) - Manage reproducible multi-language dependencies, tasks, and environments with manifests and lockfiles.
 
 ### Monitoring as Code
 
@@ -133,7 +145,20 @@
 
 *Define reusable continuous integration and delivery pipelines declaratively.*
 
+- [Dagger](https://github.com/dagger/dagger) - Build programmable pipelines with reusable components and container-based execution.
 - [Tekton](https://tekton.dev/) - Define CI/CD tasks and pipelines with declarative Kubernetes resources.
+
+### Backend as Code
+
+*Define backend services and infrastructure requirements alongside application code.*
+
+- [Encore](https://github.com/encoredev/encore) - Declare backend APIs and infrastructure resources in application code for local development and cloud provisioning.
+
+### Build as Code
+
+*Define project tasks, dependencies, and build workflows in version-controlled configuration.*
+
+- [moon](https://github.com/moonrepo/moon) - Configure projects, tasks, and execution dependencies for repositories and monorepos.
 
 ## Visuals & Media
 
@@ -150,6 +175,7 @@
 - [LikeC4](https://github.com/likec4/likec4) - Describe software architecture with a modeling language and generate diagrams from the model.
 - [Markmap](https://markmap.js.org/) - Visualize Markdown documents as interactive mindmaps.
 - [Mermaid](https://mermaid.js.org/) - JavaScript-based diagramming tool that renders Markdown-inspired text.
+- [Penrose](https://github.com/penrose/penrose) - Generate diagrams from textual descriptions of concepts, relationships, and visual rules.
 - [PlantUML](https://plantuml.com/) - Create UML diagrams from plain text descriptions.
 - [Structurizr](https://structurizr.com/) - Architecture diagrams as code using the C4 model.
 - [WaveDrom](https://wavedrom.com/) - Render digital timing diagrams from JSON-based textual descriptions.
@@ -173,6 +199,7 @@
 - [Pandoc](https://pandoc.org/) - Universal document converter between markup formats.
 - [Quarkdown](https://github.com/iamgio/quarkdown) - Create books, documents, and presentations with an extended Markdown typesetting language.
 - [Quarto](https://quarto.org/) - Publish reproducible reports, books, presentations, and websites combining text and executable code.
+- [React-pdf](https://github.com/diegomura/react-pdf) - Create PDF documents with React components in the browser or on the server.
 - [Typst](https://typst.app/) - Modern markup-based typesetting system for documents.
 
 ### Documentation as Code
@@ -189,9 +216,11 @@
 
 *Generate video content programmatically.*
 
+- [HyperFrames](https://github.com/heygen-com/hyperframes) - Render HTML, CSS, media, and seekable animations into deterministic MP4 videos.
 - [Manim](https://www.manim.community/) - Create mathematical animations programmatically in Python.
 - [Motion Canvas](https://motioncanvas.io/) - TypeScript library for creating animated videos.
 - [Remotion](https://www.remotion.dev/) - Create real videos programmatically using React.
+- [Revideo](https://github.com/midrender/revideo) - Create video scenes and animations in TypeScript with programmatic rendering and a React player.
 - [Satori](https://github.com/vercel/satori) - Convert HTML and CSS into SVG images.
 - [Simple FFmpegJS](https://github.com/Fats403/simple-ffmpegjs) - Compose videos with declarative timelines of clips, audio, and transitions using FFmpeg in Node.js.
 
@@ -247,7 +276,9 @@
 
 *Describe database structures and relationships with version-controlled schemas.*
 
+- [Atlas](https://github.com/ariga/atlas) - Manage database schemas declaratively and generate migration plans from desired schema definitions.
 - [DBML](https://dbml.dbdiagram.io/) - Define database tables and relationships with a declarative modeling language.
+- [Drizzle ORM + Kit](https://github.com/drizzle-team/drizzle-orm) - Declare SQL schemas in TypeScript and generate migrations from schema definitions.
 
 ### Dashboards as Code
 
@@ -299,6 +330,7 @@
 *Create email content from version-controlled text sources.*
 
 - [emailmd](https://github.com/anypost/emailmd) - Convert Markdown into responsive HTML emails.
+- [Maizzle](https://github.com/maizzle/framework) - Build HTML emails with templates, Tailwind CSS, and version-controlled configuration.
 - [MJML](https://mjml.io/) - Create responsive email templates with a dedicated markup language.
 - [React Email](https://react.email/) - Build version-controlled email templates with React components.
 
